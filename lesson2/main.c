@@ -1,18 +1,15 @@
 #include <stdio.h>
-void xep_loai() {
-	float diem = 0;
-	printf("nhap diem: ");
-	scanf_s("%f", &diem);
-	while (diem > 10.0 || diem < 0.0) {
-		printf("nhap lai diem: ");
-		scanf_s("%f", &diem);
+void in_tong() {
+	int n = 0;
+	printf("Nhap n: ");
+	scanf_s("%d", &n);
+	long long tong = 0;
+	for (int i = 1; i <= n; i++) {
+		tong += i;
 	}
-	if (diem >= 8.0) printf("gioi");
-	else if (diem >= 6.5 && diem < 8.0) printf("kha");
-	else if (diem >= 5.0 && diem < 6.5) printf("trung binh");
-	else printf("yeu");
+	printf("Tong %d la: %lld\n", n, tong);
 }
 void main(void) {
-	xep_loai();
+	in_tong();
 }
 
