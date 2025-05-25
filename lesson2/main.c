@@ -1,5 +1,6 @@
 #include <stdio.h>
-void xep_loai(float diem) {
+void xep_loai() {
+	float diem = 0;
 	printf("nhap diem: ");
 	scanf_s("%f", &diem);
 	while (diem > 10.0 || diem < 0.0) {
@@ -12,7 +13,6 @@ void xep_loai(float diem) {
 	else printf("yeu");
 }
 void main(void) {
-	float diem=0;
-	xep_loai(diem);
+	xep_loai();
 }
 
